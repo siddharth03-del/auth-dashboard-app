@@ -1,0 +1,9 @@
+Server is running on port 3005
+Connect to database
+{
+  _id: new ObjectId('699e895b3f8f41cf67b38e8c'),
+  username: 'testing',
+  email: 'test@example.com',
+  password: '$2b$09$lPyxfgAYYgdqi/1/hkoZyu8QSu22mgf6P.QR/dE7cgx.N91QNP28S',
+  __v: 0
+}
