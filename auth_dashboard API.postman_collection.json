@@ -1,0 +1,810 @@
+{
+  "info": {
+    "_postman_id": "ae1a7050-bfc8-418c-9364-4b34cad21bf4",
+    "name": "auth_dashboard API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38782654"
+  },
+  "item": [
+    {
+      "name": "image post",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiX2lkIjoiNjcyNTBiNjI2Y2Q5YTdlMjg4OGE4NGMwIiwidXNlcm5hbWUiOiJ0ZXN0MTIzIiwiaWF0IjoxNzM0NTkyODgyLCJleHAiOjE3MzUxOTc2ODJ9.VQmL_SP2hyUjgOko651s3bEpxLKyYmeE0NVJjp0kYkE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "image",
+              "type": "file",
+              "src": "/C:/Users/Dell/Pictures/Saved Pictures/de-an-sun-pdk00KTJkAU-unsplash.jpg"
+            },
+            {
+              "key": "caption",
+              "value": "testcaption2",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "image get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpZGRoYXJ0aHNpbmdoOTM2MUBnbWFpbC5jb20iLCJfaWQiOiI2NzE2MWY5ZGUyNWZhZjE0MWYxNTQ3M2UiLCJ1c2VybmFtZSI6IlNpZGRoYXJ0aCBTaW5naCIsImlhdCI6MTczMDEwMDY5MCwiZXhwIjoxNzMwMTg3MDkwfQ.g-DhNstOPFw-XSU66o5Y8KiCBmzRe0Qrm8f0mi391Xw",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3005/api/v1/posts?id=6708fa38a30af4374bd263c4",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhY2hpdHJhbmE5MzYxQGdtYWlsLmNvbSIsIl9pZCI6IjY3MTc4YmUyMjRmYTMyMDZhOTRmOTM5YSIsInVzZXJuYW1lIjoiUmFjaGl0IFJhbmEiLCJpYXQiOjE3Mjk1OTY0MjksImV4cCI6MTcyOTY4MjgyOX0.q3uuEJpLfNsswPjUzZvghALgXWZD-NRNxBDbnlYYUNA",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/posts?id=67178b2e3f4c356ea422b43a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "67178b2e3f4c356ea422b43a"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3005/api/v1/posts?id=6708fdeca30af4374bd263c6",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "caption",
+              "value": "Life is good",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/posts?id=6708fdeca30af4374bd263c6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6708fdeca30af4374bd263c6",
+              "type": "text"
+            },
+            {
+              "key": "caption",
+              "value": "\"Life is good\"",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "singin request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "siddharthsingh9361@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/signin",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "signin"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "singup request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "Siddharth Singh",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "siddharthsingh9361@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123456",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create comment",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhY2hpdHJhbmE5MzYxQGdtYWlsLmNvbSIsIl9pZCI6IjY3MTc4YmUyMjRmYTMyMDZhOTRmOTM5YSIsInVzZXJuYW1lIjoiUmFjaGl0IFJhbmEiLCJpYXQiOjE3Mjk2NzUzNjIsImV4cCI6MTcyOTc2MTc2Mn0.Nvw4ZLX3OkYJI2c-ZGHjoFZuv37GGykT6HwHQ7rmVAI",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "text",
+              "value": "hello my first comment",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "post",
+              "type": "text"
+            },
+            {
+              "key": "content_id",
+              "value": "67178b2e3f4c356ea422b43a",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/comments",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "comments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "comment on comment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "text",
+              "value": "",
+              "type": "text"
+            },
+            {
+              "key": "type",
+              "value": "",
+              "type": "text"
+            },
+            {
+              "key": "content_id",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/comments?",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "comments"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "post like",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhY2hpdHJhbmE5MzYxQGdtYWlsLmNvbSIsIl9pZCI6IjY3MTc4YmUyMjRmYTMyMDZhOTRmOTM5YSIsInVzZXJuYW1lIjoiUmFjaGl0IFJhbmEiLCJpYXQiOjE3Mjk3NDg4NTMsImV4cCI6MTcyOTgzNTI1M30.stO4cSB2_hLee8lcaN7ie2i-C3OWnY3cEvsLCrEbMEs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "post_id",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/like/post",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "like",
+            "post"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "comment like",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNpZGRoYXJ0aHNpbmdoOTM2MUBnbWFpbC5jb20iLCJfaWQiOiI2NzE2MWY5ZGUyNWZhZjE0MWYxNTQ3M2UiLCJ1c2VybmFtZSI6IlNpZGRoYXJ0aCBTaW5naCIsImlhdCI6MTcyOTgzNjc2OSwiZXhwIjoxNzI5OTIzMTY5fQ.ZDDDfJA7-L-qhB-LHntkk4gE51QUDRhqcZJ9VkdvHtI",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "comment_id",
+              "value": "671b352a460df92e1f93d6a1",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/like/comment",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "like",
+            "comment"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get user by prefix",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "follow",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiX2lkIjoiNjcyNTBiNjI2Y2Q5YTdlMjg4OGE4NGMwIiwidXNlcm5hbWUiOiJ0ZXN0MTIzIiwiaWF0IjoxNzMwNDgxMTc1LCJleHAiOjE3MzA1Njc1NzV9.BtibBbUL8yF0hRGHI1pCe0Sjd35GOnwJeD4k9d6ga9E",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "follow",
+              "value": "67250d476cd9a7e2888a84c5",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3005/api/v1/community/follow",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "community",
+            "follow"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "unfollow",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get feed for user",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2VlbmFAZ21haWwuY29tIiwiX2lkIjoiNjczZDkwODZjM2IyMWRjMWYwODRiMmJmIiwidXNlcm5hbWUiOiJzYWtlZW5hMTIzIiwiaWF0IjoxNzMyODgyODkwLCJleHAiOjE3MzM0ODc2OTB9",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/feedall?page=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "feedall"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get post like",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "is post liked by user",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "show comments",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "show replies",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "show comment",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "update profile",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get profile",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "explore profile",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "feed for user",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNha2VlbmFAZ21haWwuY29tIiwiX2lkIjoiNjczZDkwODZjM2IyMWRjMWYwODRiMmJmIiwidXNlcm5hbWUiOiJzYWtlZW5hMTIzIiwiaWF0IjoxNzMyODgyODkwLCJleHAiOjE3MzM0ODc2OTB9.S_hhE3-0Wd_cF0URdqPgba4eC_Or1KPnlY2uNs_nK6E",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/feedall?page=1&limit=7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "feedall"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "7",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "delete user",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "send otp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/sendotp?email=ss7758497@gmail.com",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "sendotp"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ss7758497@gmail.com"
+            },
+            {
+              "key": "otp",
+              "value": "714035",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "send otp Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:3005/api/v1/user/sendotp?email=2023csc1059@sgtbkhalsa.du.ac.in",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "sendotp"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "2023csc1059@sgtbkhalsa.du.ac.in"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "verify otp",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/verifyotp?email=ss7758497@gmail.com&otp=714035",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "verifyotp"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ss7758497@gmail.com"
+            },
+            {
+              "key": "otp",
+              "value": "714035"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "verify otp Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3005/api/v1/user/verifyotp?email=ss7758497@gmail.com&otp=714035",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3005",
+          "path": [
+            "api",
+            "v1",
+            "user",
+            "verifyotp"
+          ],
+          "query": [
+            {
+              "key": "email",
+              "value": "ss7758497@gmail.com"
+            },
+            {
+              "key": "otp",
+              "value": "714035"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get all messages",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "gemini prompt",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "feedback",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "renderserver",
+      "value": "https://imagegram03.onrender.com",
+      "type": "string"
+    },
+    {
+      "key": "local",
+      "value": "http://localhost:3005",
+      "type": "string"
+    }
+  ]
+}
