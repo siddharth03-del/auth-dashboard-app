@@ -1,0 +1,13 @@
+import dotenv from 'dotenv';
+dotenv.config();
+export const DB_URL = process.env.DB_URL;
+export const CLOUD_NAME = process.env.CLOUD_NAME;
+export const CLOUDINARY_API_KEY = process.env.CLOUDINARY_API_KEY;
+export const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET;
+export const JWT_SECRET = process.env.JWT_SECRET;
+export const CLIENTID = process.env.GMAILCLIENTID;
+export const REFERSHTOKEN = process.env.GMAILREFERESHTOKEN;
+export const ACCESSTOKEN = process.env.GMAILACCESSTOKEN;
+export const CLIENTSECRET = process.env.GMAILCLIENTSECRET;
+export const USER = process.env.GMAILUSER;
+export const GEMINI_KEY = process.env.Gemini;

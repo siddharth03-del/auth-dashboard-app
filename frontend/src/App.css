@@ -1,0 +1,19 @@
+.scrollable-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .scrollable-container::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+  }
+
+  .transition-transform { 
+    transition: transform 0.3s ease-in-out; 
+  } /* Custom class for hover effect */ 
+  .hover-scale { 
+    transform: scale(1.1); 
+  }
+  
